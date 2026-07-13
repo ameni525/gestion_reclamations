@@ -1,0 +1,63 @@
+/* src/styles.css */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import 'ngx-toastr/toastr';
+
+/* Variables globales - Couleurs SOFIMA */
+:root {
+  --sofima-primary: #0056b3; /* Bleu SOFIMA */
+  --sofima-secondary: #dc3545; /* Rouge SOFIMA */
+  --sofima-dark: #1a1a2e;
+  --sofima-light: #f8f9fa;
+  --sofima-success: #28a745;
+  --sofima-warning: #ffc107;
+  --sofima-info: #17a2b8;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles globaux */
+.card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.card-header {
+  background-color: var(--sofima-primary);
+  color: white;
+  border-radius: 10px 10px 0 0 !important;
+  padding: 1rem 1.5rem;
+}
+
+.btn-primary {
+  background-color: var(--sofima-primary);
+  border-color: var(--sofima-primary);
+}
+
+.btn-primary:hover {
+  background-color: #004494;
+  border-color: #004494;
+}
+
+.btn-danger {
+  background-color: var(--sofima-secondary);
+  border-color: var(--sofima-secondary);
+}
+
+.table th {
+  background-color: #f8f9fa;
+  border-top: none;
+}
+
+.badge {
+  font-weight: 500;
+  padding: 0.4em 0.8em;
+}

@@ -1,0 +1,120 @@
+/* Tables */
+.table-container {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+
+.table thead {
+  background-color: var(--sofima-blue);
+  color: white;
+}
+
+.table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid var(--sofima-blue-light);
+}
+
+.table tbody tr {
+  border-bottom: 1px solid var(--sofima-gray-200);
+  transition: var(--transition);
+}
+
+.table tbody tr:hover {
+  background-color: var(--sofima-gray-50);
+}
+
+.table td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+/* Table striped */
+.table-striped tbody tr:nth-child(odd) {
+  background-color: var(--sofima-gray-50);
+}
+
+.table-striped tbody tr:nth-child(odd):hover {
+  background-color: var(--sofima-gray-100);
+}
+
+/* Table responsive */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Actions dans les tables */
+.table-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.table-actions .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* État vide */
+.table-empty {
+  text-align: center;
+  padding: 3rem;
+  color: var(--sofima-gray-500);
+}
+
+.table-empty i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--sofima-gray-300);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-top: 1px solid var(--sofima-gray-200);
+}
+
+.page-item {
+  list-style: none;
+}
+
+.page-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--sofima-gray-300);
+  border-radius: var(--border-radius);
+  color: var(--sofima-blue);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.page-link:hover {
+  background-color: var(--sofima-gray-100);
+  border-color: var(--sofima-gray-400);
+}
+
+.page-item.active .page-link {
+  background-color: var(--sofima-blue);
+  color: white;
+  border-color: var(--sofima-blue);
+}
+
+.page-item.disabled .page-link {
+  color: var(--sofima-gray-400);
+  pointer-events: none;
+  background-color: var(--sofima-gray-50);
+}

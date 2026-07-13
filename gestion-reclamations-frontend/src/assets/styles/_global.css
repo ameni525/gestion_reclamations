@@ -1,0 +1,150 @@
+/* Styles globaux */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  background-color: var(--sofima-gray-50);
+  color: var(--sofima-gray-800);
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* En-têtes */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--sofima-blue);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  border-bottom: 3px solid var(--sofima-red);
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: var(--sofima-blue-light);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Liens */
+a {
+  color: var(--sofima-blue);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--sofima-red);
+  text-decoration: underline;
+}
+
+/* Cartes */
+.card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--sofima-gray-200);
+  transition: var(--transition);
+  margin-bottom: 1.5rem;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  background-color: var(--sofima-blue);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--sofima-gray-200);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Badges */
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.badge-statut-en-attente {
+  background-color: var(--statut-en-attente);
+  color: white;
+}
+
+.badge-statut-en-cours {
+  background-color: var(--statut-en-cours);
+  color: white;
+}
+
+.badge-statut-traitee {
+  background-color: var(--statut-traitee);
+  color: white;
+}
+
+.badge-statut-annulee {
+  background-color: var(--statut-annulee);
+  color: white;
+}
+
+.badge-priorite-basse {
+  background-color: var(--priorite-basse);
+  color: white;
+}
+
+.badge-priorite-moyenne {
+  background-color: var(--priorite-moyenne);
+  color: white;
+}
+
+.badge-priorite-haute {
+  background-color: var(--priorite-haute);
+  color: white;
+}
+
+.badge-priorite-urgente {
+  background-color: var(--priorite-urgente);
+  color: white;
+}
+
+/* Utilitaires */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-muted { color: var(--sofima-gray-600); }
+.text-success { color: var(--statut-traitee); }
+.text-warning { color: var(--statut-en-attente); }
+.text-danger { color: var(--statut-annulee); }
+.text-info { color: var(--statut-en-cours); }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
